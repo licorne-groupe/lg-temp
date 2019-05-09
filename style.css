@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:700");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 24px;
+}
+
+.window-container {
+  width: 100vw;
+  height: 100vh;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section {
+  max-width: 42rem;
+  width: 80%;
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.logo {
+  margin: 0 auto;
+  background: black;
+  max-width: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.message span {
+  font-family: "Exo 2", sans-serif;
+  color: whitesmoke;
+  display: block;
+}
+
+.pl, .en, .fr {
+  margin: 0.6rem 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 32rem) {
+  .pl {
+    transform: translate(-6rem, -4rem) rotate(35deg);
+  }
+  .en {
+    transform: translate(6rem, 4rem) rotate(-35deg);
+  }
+  .fr {
+    transform: translateY(4rem) rotate(15deg);
+  }
+}
