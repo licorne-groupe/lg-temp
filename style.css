@@ -13,11 +13,31 @@ html {
 .window-container {
   width: 100vw;
   height: 100vh;
-  background: lightgray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: url("https://source.unsplash.com/collection/827751/1600x900") no-repeat;
+  background-size: cover;
   font-family: "Barlow", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer, header {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+footer {
+  bottom: 0;
+}
+header {
+  top: 0;
+}
+a {
+  color: lightgreen;
 }
 
 .inner-container {
@@ -25,6 +45,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 7% 0;
+  border-radius: 1rem;
 }
 
 section {
@@ -55,7 +78,7 @@ section {
 
 .pl, .en, .fr {
   margin: 0.6rem 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 @media (min-width: 32rem) {
