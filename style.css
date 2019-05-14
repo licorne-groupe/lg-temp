@@ -58,6 +58,7 @@ header {
   width: 100vw;
   text-align: center;
   padding: 0.5rem 0;
+  cursor: default;
 }
 footer {
   bottom: 0;
@@ -113,6 +114,7 @@ section {
 .message div:hover {
   transform: translate(0.2rem, -0.2rem);
   color: chartreuse;
+  cursor: default;
 }
 
 @media (min-width: 45rem) {
