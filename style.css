@@ -29,10 +29,12 @@
 
 html {
   font-size: 24px;
+  background: #052b5a;
 }
+
 .video {
-  width: 100vw;
-  height: auto;
+  width: auto;
+  height: 100vh;
   position: fixed;
   top: 0;
   z-index: -1;
@@ -46,25 +48,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 footer,
 header {
-  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   left: 0;
   width: 100vw;
   text-align: center;
   padding: 0.5rem 0;
-  -webkit-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 footer {
   bottom: 0;
 }
 header {
   top: 0;
+}
+.bold {
+  font-family: "Kelson_sansbold", sans-serif;
 }
 a {
   color: lightgreen;
@@ -74,13 +76,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
-  background: rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap-reverse;
   padding: 7% 0;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
+  /* border-radius: 1rem; */
 }
 
 section {
@@ -105,7 +103,6 @@ section {
 .message span {
   font-family: "Kelson_sansbold", sans-serif;
   display: block;
-  text-align: right;
 }
 
 .message div {
@@ -116,4 +113,15 @@ section {
 .message div:hover {
   transform: translate(0.2rem, -0.2rem);
   color: chartreuse;
+}
+
+@media (min-width: 45rem) {
+  .video {
+    width: 100vw;
+    height: auto;
+  }
+
+  .message span {
+    text-align: right;
+  }
 }
