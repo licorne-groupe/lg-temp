@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 24px;
+  font-size: 26px;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
@@ -19,7 +19,7 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   position: absolute;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -64,6 +64,55 @@ html {
   padding: 0.5rem;
   margin-left: -18px;
 }
+
+.counter {
+  font-size: .8rem;
+  display: flex;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.counter .number{
+  padding: .5rem;
+  border-left: 1px solid white;
+}
+
+.subscriptionForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscriptionForm .subscriptionMessage {
+  font-size: .8rem;
+  margin: .1rem .1rem .1rem 0;
+}
+
+.subscriptionForm input {
+  width: 80%;
+  min-width: 10rem;
+  margin: .4rem 0;
+}
+
+.subscriptionForm .subscribeEmail {
+  font-size: .8rem;
+  padding: .3rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  border-radius: 1px;
+  color: white;
+}
+
+.subscriptionForm .subscribeButton {
+  font-size: .8rem;
+  padding: .3rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 1px;
+  color: #194583;
+  margin-bottom: .8rem;
+  cursor: pointer;
+}
+
+/* Second Page */
 
 .contact-form {
   position: absolute;
